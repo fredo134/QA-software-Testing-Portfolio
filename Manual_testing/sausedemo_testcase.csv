@@ -1,0 +1,94 @@
+Test Case ID,Module,Title,Pre-conditions,Test Steps,Expected Result,Actual Result,status
+TC_1,Authentication,Login in with valid credentials ,"User is on login page
+ (https://www.saucedemo.com/)","1. Enter 'standard_user' in Username
+2. Enter 'secret_sauce' in Password
+3. Click 'Login' button","User is logged in successfully 
+and redirected to /inventory.html.","Redirected to inventory page
+ with item list displayed.",Pass
+TC_2,Inventory,Add Single Item to Cart,"User is logged in and 
+on the inventory page","1. Locate 'Sauce Labs Backpack'
+2. Click 'Add to cart' button","Button text changes to 'Remove'
+ and shopping cart badge increments to '1'.","Badge updated to 1; 
+button updated to 'Remove'.",Pass
+TC_3,Checkout,"Complete End-to-End 
+Checkout",At least 1 item is in the cart,"1. Click Cart icon
+2. Click 'Checkout'
+3. Enter First Name, Last Name, Zip Code
+4. Click 'Continue'
+5. Click 'Finish'","Redirected to /checkout-complete.html 
+displaying 'Thank you for your order!'","Order completed successfully
+ with confirmation message displayed.",Pass
+TC_4,Inventory,Remove Item from Cart,Sauce Labs Backpack' is in the cart,"1. Click 'Remove' button on 
+'Sauce Labs Backpack'","Button changes back to
+ 'Add to cart' and cart count badge disappears/decrements.","Badge removed; button reset to
+ 'Add to cart'.",Pass
+TC_5,Inventory,"Sort Products by Price
+ (Low to High)","User is logged in and on
+ the inventory page","1. Click product sort dropdown
+2. Select 'Price (low to high)'","Products rearrange in ascending 
+order starting with $7.99 item.","Products sorted correctly by
+ lowest price first.",Pass
+TC_6,Authentication,Login with Invalid Password,User is on login page,"1. Enter 'standard_user'
+2. Enter 'wrong_password'
+3. Click 'Login'","Error displayed: 'Epic sadface:
+ Username and password do not match...'","Error message rendered
+ as expected.",Pass
+TC_7,Authentication,Login with Locked Out User,User is on login page,"1. Enter 'locked_out_user'
+2. Enter 'secret_sauce'
+3. Click 'Login'","Error displayed: 'Epic sadface:
+ Sorry, this user has been locked out.'",Account block message displayed.,Pass
+TC_8,Checkout,"Submit Checkout with Blank 
+Fields","Item added to cart and user is on
+ /checkout-step-one.html","1. Leave First Name, Last Name, Zip blank
+2. Click 'Continue'","Navigation blocked; error displayed:
+ 'Error: First Name is required'","Form submission prevented with
+ proper error banner.",Pass
+TC_9,"Navigation /
+ Auth","Direct Page Access 
+Without Authentication","Browser is open with 
+clear cache/session","1. Navigate directly to 
+https://www.saucedemo.com/inventory.html","Page access blocked;
+ redirected to login with auth error banner.","Redirected back to / with missing
+ login error.",Pass
+TC_10,Checkout,"Submit Checkout with
+ Missing Postal Code","Item in cart and user on 
+checkout step one","1. Enter First Name 'John'
+2. Enter Last Name 'Doe'
+3. Leave Zip Code empty
+4. Click 'Continue'","Navigation blocked; error displayed: 
+'Error: Postal Code is required'.","System blocked progression and 
+displayed Postal Code error.",Pass
+TC_11,Checkout,"Maximum Input Length in
+ Checkout Fields","Item in cart and user on 
+/checkout-step-one.html","1. Enter 250+ characters in First Name, Last Name, and Postal Code
+2. Click 'Continue'","Inputs handle long strings safely
+ without UI overflow or application 
+crashes.","Input trimmed/accepted safely 
+without application errors.",Pass
+TC_12,Checkout,"Rapid Multi-Clicks 
+on Order Finish Button","User is on
+ /checkout-step-two.html","1. Click 'Finish' button rapidly
+ multiple times in quick succession","Only one order is submitted; 
+system prevents duplicate API/order transactions.","Order processed once without 
+duplicate submission bugs.",Pass
+TC_13,Checkout / Navigation,"Mid-Checkout Navigation
+ Back Button","User is on
+ /checkout-step-two.html","1. Click browser 'Back' button 
+to return to step one","Checkout state persists gracefully 
+or prompts user cleanly without
+ crashing session.","Returned to step one cleanly; 
+state preserved.",Pass
+TC_14,Inventory / Cart,"Cart Badge Limit with All 
+Items Added","User is on inventory page with 
+empty cart","1. Click 'Add to cart' on all 6 available 
+items on the page sequentially","Cart badge updates to exactly '6'
+ without rendering overflow/layout distortion.","Badge counter scales to 6 with 
+intact UI layout.",Pass
+TC_15,Authentication,"Special Characters in 
+Field Inputs",User is on login page,"1. Enter '<script>alert(1)</script>' in Username
+2. Enter ""' OR '1'='1"" in Password
+3. Click 'Login'","Input is sanitized; standard invalid 
+login error is displayed without 
+script execution.","Error displayed safely;
+ no script execution or
+ SQL exposure.",Pass

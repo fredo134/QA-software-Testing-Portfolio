@@ -1,0 +1,301 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1788478564737,1835,01 - post Auth,200,OK,baseline load 50 user 1-4,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,1814,0,1502
+1788478564159,2413,01 - post Auth,200,OK,baseline load 50 user 1-1,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,2413,0,2108
+1788478564159,2412,01 - post Auth,200,OK,baseline load 50 user 1-2,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,2402,0,2103
+1788478565038,1533,01 - post Auth,200,OK,baseline load 50 user 1-5,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,1513,0,1204
+1788478564446,2125,01 - post Auth,200,OK,baseline load 50 user 1-3,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,2105,0,1802
+1788478565336,1236,01 - post Auth,200,OK,baseline load 50 user 1-6,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,1215,0,903
+1788478565633,1133,01 - post Auth,200,OK,baseline load 50 user 1-7,text,true,,770,277,10,10,https://restful-booker.herokuapp.com/auth,1132,0,873
+1788478566721,297,02 - POST Create Booking,200,OK,baseline load 50 user 1-4,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,297,0,0
+1788478566721,297,02 - POST Create Booking,200,OK,baseline load 50 user 1-5,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,297,0,0
+1788478566721,297,02 - POST Create Booking,200,OK,baseline load 50 user 1-6,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,297,0,0
+1788478566768,257,02 - POST Create Booking,200,OK,baseline load 50 user 1-7,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,257,0,0
+1788478566721,308,02 - POST Create Booking,200,OK,baseline load 50 user 1-3,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,308,0,0
+1788478566721,318,02 - POST Create Booking,200,OK,baseline load 50 user 1-2,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,318,0,0
+1788478566721,324,02 - POST Create Booking,200,OK,baseline load 50 user 1-1,text,true,,939,460,11,11,https://restful-booker.herokuapp.com/booking,324,0,0
+1788478565939,1124,01 - post Auth,200,OK,baseline load 50 user 1-8,text,true,,766,277,11,11,https://restful-booker.herokuapp.com/auth,1124,0,856
+1788478567033,292,03 - PUT Update Booking,200,OK,baseline load 50 user 1-3,text,true,,914,499,12,12,https://restful-booker.herokuapp.com/booking/2805,292,0,0
+1788478567024,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-4,text,true,,914,499,12,12,https://restful-booker.herokuapp.com/booking/2802,301,0,0
+1788478567028,297,03 - PUT Update Booking,200,OK,baseline load 50 user 1-7,text,true,,914,499,12,12,https://restful-booker.herokuapp.com/booking/2808,297,0,0
+1788478567024,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-6,text,true,,914,499,12,12,https://restful-booker.herokuapp.com/booking/2801,301,0,0
+1788478566236,1089,01 - post Auth,200,OK,baseline load 50 user 1-9,text,true,,766,277,12,12,https://restful-booker.herokuapp.com/auth,1089,0,814
+1788478567024,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-5,text,true,,914,499,12,12,https://restful-booker.herokuapp.com/booking/2803,301,0,0
+1788478567042,295,03 - PUT Update Booking,200,OK,baseline load 50 user 1-2,text,true,,914,499,12,12,https://restful-booker.herokuapp.com/booking/2806,295,0,0
+1788478567066,282,02 - POST Create Booking,200,OK,baseline load 50 user 1-8,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,282,0,0
+1788478567048,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-1,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/2807,301,0,0
+1788478567328,303,02 - POST Create Booking,200,OK,baseline load 50 user 1-9,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,303,0,0
+1788478567351,281,03 - PUT Update Booking,200,OK,baseline load 50 user 1-8,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/2812,281,0,0
+1788478566537,1127,01 - post Auth,200,OK,baseline load 50 user 1-10,text,true,,766,277,5,5,https://restful-booker.herokuapp.com/auth,1127,0,852
+1788478567633,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-9,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/2816,304,0,0
+1788478566835,1103,01 - post Auth,200,OK,baseline load 50 user 1-11,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1102,0,806
+1788478567665,284,02 - POST Create Booking,200,OK,baseline load 50 user 1-10,text,true,,939,460,5,5,https://restful-booker.herokuapp.com/booking,284,0,0
+1788478567951,297,03 - PUT Update Booking,200,OK,baseline load 50 user 1-10,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/2819,297,0,0
+1788478567939,309,02 - POST Create Booking,200,OK,baseline load 50 user 1-11,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,309,0,0
+1788478567136,1112,01 - post Auth,200,OK,baseline load 50 user 1-12,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1112,0,824
+1788478568252,302,03 - PUT Update Booking,200,OK,baseline load 50 user 1-11,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/2821,302,0,0
+1788478567437,1117,01 - post Auth,200,OK,baseline load 50 user 1-13,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1117,0,815
+1788478568252,304,02 - POST Create Booking,200,OK,baseline load 50 user 1-12,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,303,0,0
+1788478567734,1127,01 - post Auth,200,OK,baseline load 50 user 1-14,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1127,0,821
+1788478568559,304,03 - PUT Update Booking,200,OK,baseline load 50 user 1-12,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/2824,304,0,0
+1788478568557,306,02 - POST Create Booking,200,OK,baseline load 50 user 1-13,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,306,0,0
+1788478568032,1136,01 - post Auth,200,OK,baseline load 50 user 1-15,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1136,0,833
+1788478568868,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-13,text,true,,926,499,6,6,https://restful-booker.herokuapp.com/booking/2829,301,0,0
+1788478568868,300,02 - POST Create Booking,200,OK,baseline load 50 user 1-14,text,true,,951,460,6,6,https://restful-booker.herokuapp.com/booking,300,0,0
+1788478569171,304,03 - PUT Update Booking,200,OK,baseline load 50 user 1-14,text,true,,926,499,6,6,https://restful-booker.herokuapp.com/booking/2834,304,0,0
+1788478568335,1140,01 - post Auth,200,OK,baseline load 50 user 1-16,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1140,0,835
+1788478569171,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-15,text,true,,951,460,6,6,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478568640,1143,01 - post Auth,200,OK,baseline load 50 user 1-17,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1142,0,836
+1788478569479,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-15,text,true,,926,499,6,6,https://restful-booker.herokuapp.com/booking/2837,304,0,0
+1788478569478,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-16,text,true,,951,460,6,6,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478569786,304,03 - PUT Update Booking,200,OK,baseline load 50 user 1-16,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/2839,304,0,0
+1788478569786,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-17,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,304,0,0
+1788478568935,1157,01 - post Auth,200,OK,baseline load 50 user 1-18,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1157,0,865
+1788478570095,302,03 - PUT Update Booking,200,OK,baseline load 50 user 1-17,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/2844,302,0,0
+1788478569235,1162,01 - post Auth,200,OK,baseline load 50 user 1-19,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1162,0,857
+1788478570094,310,02 - POST Create Booking,200,OK,baseline load 50 user 1-18,text,true,,943,460,5,5,https://restful-booker.herokuapp.com/booking,310,0,0
+1788478570400,306,02 - POST Create Booking,200,OK,baseline load 50 user 1-19,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,306,0,0
+1788478569537,1171,01 - post Auth,200,OK,baseline load 50 user 1-20,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1171,0,879
+1788478570407,303,03 - PUT Update Booking,200,OK,baseline load 50 user 1-18,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/2847,303,0,0
+1788478570710,340,03 - PUT Update Booking,200,OK,baseline load 50 user 1-19,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2850,340,0,0
+1788478569837,1213,01 - post Auth,200,OK,baseline load 50 user 1-21,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1213,0,871
+1788478570711,339,02 - POST Create Booking,200,OK,baseline load 50 user 1-20,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,339,0,0
+1788478570135,1215,01 - post Auth,200,OK,baseline load 50 user 1-22,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1214,0,915
+1788478571054,297,03 - PUT Update Booking,200,OK,baseline load 50 user 1-20,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2854,297,0,0
+1788478571053,298,02 - POST Create Booking,200,OK,baseline load 50 user 1-21,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,298,0,0
+1788478570435,1192,01 - post Auth,200,OK,baseline load 50 user 1-23,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1192,0,916
+1788478571353,275,02 - POST Create Booking,200,OK,baseline load 50 user 1-22,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,275,0,0
+1788478571354,285,03 - PUT Update Booking,200,OK,baseline load 50 user 1-21,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2858,285,0,0
+1788478571632,302,03 - PUT Update Booking,200,OK,baseline load 50 user 1-22,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2860,302,0,0
+1788478570735,1198,01 - post Auth,200,OK,baseline load 50 user 1-24,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1198,0,894
+1788478571631,303,02 - POST Create Booking,200,OK,baseline load 50 user 1-23,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,303,0,0
+1788478571937,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-23,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2863,304,0,0
+1788478571037,1204,01 - post Auth,200,OK,baseline load 50 user 1-25,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1204,0,897
+1788478571937,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-24,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478572245,304,03 - PUT Update Booking,200,OK,baseline load 50 user 1-24,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2866,303,0,0
+1788478572245,304,02 - POST Create Booking,200,OK,baseline load 50 user 1-25,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,304,0,0
+1788478571336,1216,01 - post Auth,200,OK,baseline load 50 user 1-26,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1216,0,912
+1788478572553,296,03 - PUT Update Booking,200,OK,baseline load 50 user 1-25,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2870,296,0,0
+1788478571639,1210,01 - post Auth,200,OK,baseline load 50 user 1-27,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1210,0,910
+1788478572556,295,02 - POST Create Booking,200,OK,baseline load 50 user 1-26,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,295,0,0
+1788478572852,279,02 - POST Create Booking,200,OK,baseline load 50 user 1-27,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,279,0,0
+1788478571941,1194,01 - post Auth,200,OK,baseline load 50 user 1-28,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1194,0,911
+1788478572855,285,03 - PUT Update Booking,200,OK,baseline load 50 user 1-26,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2873,285,0,0
+1788478573134,316,03 - PUT Update Booking,200,OK,baseline load 50 user 1-27,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2878,315,0,0
+1788478573138,313,02 - POST Create Booking,200,OK,baseline load 50 user 1-28,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,313,0,0
+1788478572237,1221,01 - post Auth,200,OK,baseline load 50 user 1-29,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1221,0,910
+1788478572557,1196,01 - post Auth,200,OK,baseline load 50 user 1-30,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1196,0,895
+1788478573456,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-28,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2882,301,0,0
+1788478573461,297,02 - POST Create Booking,200,OK,baseline load 50 user 1-29,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,297,0,0
+1788478572837,1208,01 - post Auth,200,OK,baseline load 50 user 1-31,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1208,0,915
+1788478573757,288,02 - POST Create Booking,200,OK,baseline load 50 user 1-30,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,288,0,0
+1788478573762,286,03 - PUT Update Booking,200,OK,baseline load 50 user 1-29,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2886,286,0,0
+1788478574048,266,02 - POST Create Booking,200,OK,baseline load 50 user 1-31,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,266,0,0
+1788478574048,272,03 - PUT Update Booking,200,OK,baseline load 50 user 1-30,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2890,272,0,0
+1788478573137,1205,01 - post Auth,200,OK,baseline load 50 user 1-32,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1205,0,923
+1788478574317,279,03 - PUT Update Booking,200,OK,baseline load 50 user 1-31,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2894,279,0,0
+1788478573436,1175,01 - post Auth,200,OK,baseline load 50 user 1-33,text,true,,774,277,5,5,https://restful-booker.herokuapp.com/auth,1175,0,910
+1788478574345,275,02 - POST Create Booking,200,OK,baseline load 50 user 1-32,text,true,,947,460,5,5,https://restful-booker.herokuapp.com/booking,275,0,0
+1788478574613,285,02 - POST Create Booking,200,OK,baseline load 50 user 1-33,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,285,0,0
+1788478574623,285,03 - PUT Update Booking,200,OK,baseline load 50 user 1-32,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2899,285,0,0
+1788478573737,1187,01 - post Auth,200,OK,baseline load 50 user 1-34,text,true,,774,277,5,5,https://restful-booker.herokuapp.com/auth,1187,0,903
+1788478574901,309,03 - PUT Update Booking,200,OK,baseline load 50 user 1-33,text,true,,926,499,6,6,https://restful-booker.herokuapp.com/booking/2903,309,0,0
+1788478574926,294,02 - POST Create Booking,200,OK,baseline load 50 user 1-34,text,true,,951,460,5,5,https://restful-booker.herokuapp.com/booking,294,0,0
+1788478574038,1229,01 - post Auth,200,OK,baseline load 50 user 1-35,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1229,0,931
+1788478574337,1180,01 - post Auth,200,OK,baseline load 50 user 1-36,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1180,0,873
+1788478575223,296,03 - PUT Update Booking,200,OK,baseline load 50 user 1-34,text,true,,926,499,6,6,https://restful-booker.herokuapp.com/booking/2906,296,0,0
+1788478575269,283,02 - POST Create Booking,200,OK,baseline load 50 user 1-35,text,true,,951,460,6,6,https://restful-booker.herokuapp.com/booking,283,0,0
+1788478575520,304,02 - POST Create Booking,200,OK,baseline load 50 user 1-36,text,true,,951,460,6,6,https://restful-booker.herokuapp.com/booking,304,0,0
+1788478574636,1192,01 - post Auth,200,OK,baseline load 50 user 1-37,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1192,0,906
+1788478575554,289,03 - PUT Update Booking,200,OK,baseline load 50 user 1-35,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/2911,288,0,0
+1788478575828,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-36,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2914,305,0,0
+1788478575830,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-37,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478574937,1198,01 - post Auth,200,OK,baseline load 50 user 1-38,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1198,0,888
+1788478576139,303,02 - POST Create Booking,200,OK,baseline load 50 user 1-38,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,303,0,0
+1788478575236,1206,01 - post Auth,200,OK,baseline load 50 user 1-39,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1206,0,901
+1788478576139,304,03 - PUT Update Booking,200,OK,baseline load 50 user 1-37,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2917,304,0,0
+1788478575537,1211,01 - post Auth,200,OK,baseline load 50 user 1-40,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1211,0,906
+1788478576445,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-38,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2919,304,0,0
+1788478576445,303,02 - POST Create Booking,200,OK,baseline load 50 user 1-39,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,302,0,0
+1788478575838,1208,01 - post Auth,200,OK,baseline load 50 user 1-41,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1208,0,910
+1788478576751,295,02 - POST Create Booking,200,OK,baseline load 50 user 1-40,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,295,0,0
+1788478576756,293,03 - PUT Update Booking,200,OK,baseline load 50 user 1-39,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2923,292,0,0
+1788478577049,294,03 - PUT Update Booking,200,OK,baseline load 50 user 1-40,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2926,294,0,0
+1788478577048,295,02 - POST Create Booking,200,OK,baseline load 50 user 1-41,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,295,0,0
+1788478576141,1204,01 - post Auth,200,OK,baseline load 50 user 1-42,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1204,0,917
+1788478577346,302,03 - PUT Update Booking,200,OK,baseline load 50 user 1-41,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2931,302,0,0
+1788478576438,1210,01 - post Auth,200,OK,baseline load 50 user 1-43,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1210,0,906
+1788478577346,308,02 - POST Create Booking,200,OK,baseline load 50 user 1-42,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,308,0,0
+1788478577651,298,02 - POST Create Booking,200,OK,baseline load 50 user 1-43,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,298,0,0
+1788478577658,294,03 - PUT Update Booking,200,OK,baseline load 50 user 1-42,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2934,294,0,0
+1788478576736,1218,01 - post Auth,200,OK,baseline load 50 user 1-44,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1217,0,923
+1788478577954,302,03 - PUT Update Booking,200,OK,baseline load 50 user 1-43,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2937,302,0,0
+1788478577034,1222,01 - post Auth,200,OK,baseline load 50 user 1-45,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1222,0,917
+1788478577957,303,02 - POST Create Booking,200,OK,baseline load 50 user 1-44,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,303,0,0
+1788478578263,297,03 - PUT Update Booking,200,OK,baseline load 50 user 1-44,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2942,297,0,0
+1788478577334,1225,01 - post Auth,200,OK,baseline load 50 user 1-46,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1225,0,922
+1788478578259,300,02 - POST Create Booking,200,OK,baseline load 50 user 1-45,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,300,0,0
+1788478578562,288,02 - POST Create Booking,200,OK,baseline load 50 user 1-46,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,288,0,0
+1788478578562,307,03 - PUT Update Booking,200,OK,baseline load 50 user 1-45,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2946,307,0,0
+1788478577637,1240,01 - post Auth,200,OK,baseline load 50 user 1-47,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1240,0,929
+1788478578853,295,03 - PUT Update Booking,200,OK,baseline load 50 user 1-46,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2950,295,0,0
+1788478578879,298,02 - POST Create Booking,200,OK,baseline load 50 user 1-47,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,298,0,0
+1788478577936,1283,01 - post Auth,200,OK,baseline load 50 user 1-48,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1282,0,961
+1788478579179,285,03 - PUT Update Booking,200,OK,baseline load 50 user 1-47,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2953,285,0,0
+1788478578244,1271,01 - post Auth,200,OK,baseline load 50 user 1-49,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1271,0,973
+1788478579221,301,02 - POST Create Booking,200,OK,baseline load 50 user 1-48,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,301,0,0
+1788478578547,1206,01 - post Auth,200,OK,baseline load 50 user 1-50,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1206,0,917
+1788478579525,289,03 - PUT Update Booking,200,OK,baseline load 50 user 1-48,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2956,288,0,0
+1788478579518,295,02 - POST Create Booking,200,OK,baseline load 50 user 1-49,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,295,0,0
+1788478578841,1180,01 - post Auth,200,OK,baseline load 50 user 1-51,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1180,0,908
+1788478579756,301,02 - POST Create Booking,200,OK,baseline load 50 user 1-50,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,301,0,0
+1788478579815,299,03 - PUT Update Booking,200,OK,baseline load 50 user 1-49,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2960,299,0,0
+1788478579136,1194,01 - post Auth,200,OK,baseline load 50 user 1-52,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1194,0,896
+1788478580024,306,02 - POST Create Booking,200,OK,baseline load 50 user 1-51,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,306,0,0
+1788478580060,298,03 - PUT Update Booking,200,OK,baseline load 50 user 1-50,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/2963,298,0,0
+1788478580333,303,03 - PUT Update Booking,200,OK,baseline load 50 user 1-51,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2965,303,0,0
+1788478580333,304,02 - POST Create Booking,200,OK,baseline load 50 user 1-52,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,304,0,0
+1788478579435,1202,01 - post Auth,200,OK,baseline load 50 user 1-53,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1202,0,900
+1788478580640,306,03 - PUT Update Booking,200,OK,baseline load 50 user 1-52,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/2968,306,0,0
+1788478580642,304,02 - POST Create Booking,200,OK,baseline load 50 user 1-53,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,304,0,0
+1788478579735,1211,01 - post Auth,200,OK,baseline load 50 user 1-54,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1211,0,904
+1788478580948,299,03 - PUT Update Booking,200,OK,baseline load 50 user 1-53,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2972,299,0,0
+1788478580948,301,02 - POST Create Booking,200,OK,baseline load 50 user 1-54,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,300,0,0
+1788478580043,1209,01 - post Auth,200,OK,baseline load 50 user 1-55,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1208,0,921
+1788478581252,297,03 - PUT Update Booking,200,OK,baseline load 50 user 1-54,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2975,297,0,0
+1788478581254,296,02 - POST Create Booking,200,OK,baseline load 50 user 1-55,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,295,0,0
+1788478580337,1286,01 - post Auth,200,OK,baseline load 50 user 1-56,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1286,0,999
+1788478580647,1189,01 - post Auth,200,OK,baseline load 50 user 1-57,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1189,0,903
+1788478581553,292,03 - PUT Update Booking,200,OK,baseline load 50 user 1-55,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/2978,292,0,0
+1788478581625,302,02 - POST Create Booking,200,OK,baseline load 50 user 1-56,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,302,0,0
+1788478580950,1186,01 - post Auth,200,OK,baseline load 50 user 1-58,text,true,,778,277,7,7,https://restful-booker.herokuapp.com/auth,1185,0,875
+1788478581839,310,02 - POST Create Booking,200,OK,baseline load 50 user 1-57,text,true,,951,460,7,7,https://restful-booker.herokuapp.com/booking,310,0,0
+1788478581930,291,03 - PUT Update Booking,200,OK,baseline load 50 user 1-56,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/2981,291,0,0
+1788478582139,308,02 - POST Create Booking,200,OK,baseline load 50 user 1-58,text,true,,951,460,7,7,https://restful-booker.herokuapp.com/booking,308,0,0
+1788478582152,300,03 - PUT Update Booking,200,OK,baseline load 50 user 1-57,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/2983,300,0,0
+1788478581234,1218,01 - post Auth,200,OK,baseline load 50 user 1-59,text,true,,778,277,7,7,https://restful-booker.herokuapp.com/auth,1218,0,920
+1788478582451,296,03 - PUT Update Booking,200,OK,baseline load 50 user 1-58,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/2985,296,0,0
+1788478581535,1215,01 - post Auth,200,OK,baseline load 50 user 1-60,text,true,,778,277,7,7,https://restful-booker.herokuapp.com/auth,1214,0,916
+1788478582455,298,02 - POST Create Booking,200,OK,baseline load 50 user 1-59,text,true,,951,460,6,6,https://restful-booker.herokuapp.com/booking,297,0,0
+1788478581834,1196,01 - post Auth,200,OK,baseline load 50 user 1-61,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1196,0,914
+1788478582752,280,02 - POST Create Booking,200,OK,baseline load 50 user 1-60,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,280,0,0
+1788478582756,291,03 - PUT Update Booking,200,OK,baseline load 50 user 1-59,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2990,291,0,0
+1788478582138,1162,01 - post Auth,200,OK,baseline load 50 user 1-62,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1162,0,893
+1788478583032,277,02 - POST Create Booking,200,OK,baseline load 50 user 1-61,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,277,0,0
+1788478583035,306,03 - PUT Update Booking,200,OK,baseline load 50 user 1-60,text,true,,918,499,7,7,https://restful-booker.herokuapp.com/booking/2995,306,0,0
+1788478583312,296,03 - PUT Update Booking,200,OK,baseline load 50 user 1-61,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/2999,296,0,0
+1788478583303,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-62,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478582435,1173,01 - post Auth,200,OK,baseline load 50 user 1-63,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1173,0,880
+1788478583611,303,03 - PUT Update Booking,200,OK,baseline load 50 user 1-62,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/3002,303,0,0
+1788478582735,1178,01 - post Auth,200,OK,baseline load 50 user 1-64,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1178,0,874
+1788478583611,303,02 - POST Create Booking,200,OK,baseline load 50 user 1-63,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,303,0,0
+1788478583916,304,02 - POST Create Booking,200,OK,baseline load 50 user 1-64,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,304,0,0
+1788478583916,307,03 - PUT Update Booking,200,OK,baseline load 50 user 1-63,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/3007,307,0,0
+1788478583039,1189,01 - post Auth,200,OK,baseline load 50 user 1-65,text,true,,774,277,5,5,https://restful-booker.herokuapp.com/auth,1189,0,902
+1788478584225,260,03 - PUT Update Booking,200,OK,baseline load 50 user 1-64,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/3010,260,0,0
+1788478583334,1157,01 - post Auth,200,OK,baseline load 50 user 1-66,text,true,,774,277,5,5,https://restful-booker.herokuapp.com/auth,1157,0,890
+1788478584231,282,02 - POST Create Booking,200,OK,baseline load 50 user 1-65,text,true,,947,460,5,5,https://restful-booker.herokuapp.com/booking,282,0,0
+1788478584493,281,02 - POST Create Booking,200,OK,baseline load 50 user 1-66,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,280,0,0
+1788478584517,296,03 - PUT Update Booking,200,OK,baseline load 50 user 1-65,text,true,,922,499,6,6,https://restful-booker.herokuapp.com/booking/3016,296,0,0
+1788478583634,1180,01 - post Auth,200,OK,baseline load 50 user 1-67,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1180,0,888
+1788478584777,277,03 - PUT Update Booking,200,OK,baseline load 50 user 1-66,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/3020,277,0,0
+1788478583936,1121,01 - post Auth,200,OK,baseline load 50 user 1-68,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1121,0,856
+1788478584816,283,02 - POST Create Booking,200,OK,baseline load 50 user 1-67,text,true,,939,460,5,5,https://restful-booker.herokuapp.com/booking,283,0,0
+1788478585059,291,02 - POST Create Booking,200,OK,baseline load 50 user 1-68,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,290,0,0
+1788478585102,285,03 - PUT Update Booking,200,OK,baseline load 50 user 1-67,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/3024,285,0,0
+1788478584241,1175,01 - post Auth,200,OK,baseline load 50 user 1-69,text,true,,766,277,5,5,https://restful-booker.herokuapp.com/auth,1175,0,864
+1788478584534,1121,01 - post Auth,200,OK,baseline load 50 user 1-70,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1121,0,815
+1788478585353,316,03 - PUT Update Booking,200,OK,baseline load 50 user 1-68,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/3028,316,0,0
+1788478585420,286,02 - POST Create Booking,200,OK,baseline load 50 user 1-69,text,true,,939,460,5,5,https://restful-booker.herokuapp.com/booking,286,0,0
+1788478585657,255,02 - POST Create Booking,200,OK,baseline load 50 user 1-70,text,true,,939,460,5,5,https://restful-booker.herokuapp.com/booking,255,0,0
+1788478584836,1133,01 - post Auth,200,OK,baseline load 50 user 1-71,text,true,,766,277,5,5,https://restful-booker.herokuapp.com/auth,1132,0,866
+1788478585707,300,03 - PUT Update Booking,200,OK,baseline load 50 user 1-69,text,true,,914,499,5,5,https://restful-booker.herokuapp.com/booking/3031,300,0,0
+1788478585914,259,03 - PUT Update Booking,200,OK,baseline load 50 user 1-70,text,true,,914,499,5,5,https://restful-booker.herokuapp.com/booking/3035,259,0,0
+1788478585133,1077,01 - post Auth,200,OK,baseline load 50 user 1-72,text,true,,766,277,5,5,https://restful-booker.herokuapp.com/auth,1077,0,810
+1788478585970,275,02 - POST Create Booking,200,OK,baseline load 50 user 1-71,text,true,,939,460,5,5,https://restful-booker.herokuapp.com/booking,275,0,0
+1788478586212,250,02 - POST Create Booking,200,OK,baseline load 50 user 1-72,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,249,0,0
+1788478585433,1036,01 - post Auth,200,OK,baseline load 50 user 1-73,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1036,0,786
+1788478586248,278,03 - PUT Update Booking,200,OK,baseline load 50 user 1-71,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/3038,277,0,0
+1788478586463,255,03 - PUT Update Booking,200,OK,baseline load 50 user 1-72,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/3039,255,0,0
+1788478586470,260,02 - POST Create Booking,200,OK,baseline load 50 user 1-73,text,true,,939,460,5,5,https://restful-booker.herokuapp.com/booking,260,0,0
+1788478586732,250,03 - PUT Update Booking,200,OK,baseline load 50 user 1-73,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/3042,250,0,0
+1788478586427,1069,01 - post Auth,200,OK,baseline load 50 user 1-76,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1069,0,821
+1788478586429,1107,01 - post Auth,200,OK,baseline load 50 user 1-74,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1107,0,831
+1788478586429,1136,01 - post Auth,200,OK,baseline load 50 user 1-75,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1136,0,870
+1788478586632,1172,01 - post Auth,200,OK,baseline load 50 user 1-77,text,true,,770,277,7,7,https://restful-booker.herokuapp.com/auth,1172,0,864
+1788478587498,306,02 - POST Create Booking,200,OK,baseline load 50 user 1-76,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,306,0,0
+1788478587537,268,02 - POST Create Booking,200,OK,baseline load 50 user 1-74,text,true,,943,460,7,7,https://restful-booker.herokuapp.com/booking,268,0,0
+1788478587566,277,02 - POST Create Booking,200,OK,baseline load 50 user 1-75,text,true,,943,460,8,8,https://restful-booker.herokuapp.com/booking,277,0,0
+1788478586948,1162,01 - post Auth,200,OK,baseline load 50 user 1-78,text,true,,786,277,8,8,https://restful-booker.herokuapp.com/auth,1162,0,856
+1788478587805,306,03 - PUT Update Booking,200,OK,baseline load 50 user 1-76,text,true,,934,499,8,8,https://restful-booker.herokuapp.com/booking/3053,306,0,0
+1788478587806,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-74,text,true,,934,499,8,8,https://restful-booker.herokuapp.com/booking/3054,305,0,0
+1788478587805,306,02 - POST Create Booking,200,OK,baseline load 50 user 1-77,text,true,,959,460,8,8,https://restful-booker.herokuapp.com/booking,306,0,0
+1788478587844,283,03 - PUT Update Booking,200,OK,baseline load 50 user 1-75,text,true,,934,499,6,6,https://restful-booker.herokuapp.com/booking/3055,283,0,0
+1788478588112,306,02 - POST Create Booking,200,OK,baseline load 50 user 1-78,text,true,,959,460,6,6,https://restful-booker.herokuapp.com/booking,306,0,0
+1788478588113,307,03 - PUT Update Booking,200,OK,baseline load 50 user 1-77,text,true,,934,499,6,6,https://restful-booker.herokuapp.com/booking/3059,307,0,0
+1788478587231,1190,01 - post Auth,200,OK,baseline load 50 user 1-79,text,true,,786,277,6,6,https://restful-booker.herokuapp.com/auth,1190,0,881
+1788478588420,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-78,text,true,,934,499,6,6,https://restful-booker.herokuapp.com/booking/3064,305,0,0
+1788478587534,1191,01 - post Auth,200,OK,baseline load 50 user 1-80,text,true,,786,277,6,6,https://restful-booker.herokuapp.com/auth,1191,0,885
+1788478588422,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-79,text,true,,959,460,5,5,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478588726,307,02 - POST Create Booking,200,OK,baseline load 50 user 1-80,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,307,0,0
+1788478587830,1203,01 - post Auth,200,OK,baseline load 50 user 1-81,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1203,0,896
+1788478588729,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-79,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3068,305,0,0
+1788478589035,305,03 - PUT Update Booking,200,OK,baseline load 50 user 1-80,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3071,305,0,0
+1788478589035,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-81,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478588131,1208,01 - post Auth,200,OK,baseline load 50 user 1-82,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1208,0,904
+1788478589341,302,03 - PUT Update Booking,200,OK,baseline load 50 user 1-81,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3073,302,0,0
+1788478589342,301,02 - POST Create Booking,200,OK,baseline load 50 user 1-82,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,301,0,0
+1788478588430,1212,01 - post Auth,200,OK,baseline load 50 user 1-83,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1212,0,910
+1788478589645,286,02 - POST Create Booking,200,OK,baseline load 50 user 1-83,text,true,,947,460,6,6,https://restful-booker.herokuapp.com/booking,286,0,0
+1788478588732,1198,01 - post Auth,200,OK,baseline load 50 user 1-84,text,true,,774,277,6,6,https://restful-booker.herokuapp.com/auth,1198,0,912
+1788478589645,291,03 - PUT Update Booking,200,OK,baseline load 50 user 1-82,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3077,291,0,0
+1788478589032,1211,01 - post Auth,200,OK,baseline load 50 user 1-85,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1211,0,899
+1788478589933,315,03 - PUT Update Booking,200,OK,baseline load 50 user 1-83,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3080,315,0,0
+1788478589933,314,02 - POST Create Booking,200,OK,baseline load 50 user 1-84,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,314,0,0
+1788478589332,1213,01 - post Auth,200,OK,baseline load 50 user 1-86,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1213,0,913
+1788478590246,299,02 - POST Create Booking,200,OK,baseline load 50 user 1-85,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,299,0,0
+1788478590249,318,03 - PUT Update Booking,200,OK,baseline load 50 user 1-84,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3083,318,0,0
+1788478590548,296,03 - PUT Update Booking,200,OK,baseline load 50 user 1-85,text,true,,922,499,7,7,https://restful-booker.herokuapp.com/booking/3085,296,0,0
+1788478590547,297,02 - POST Create Booking,200,OK,baseline load 50 user 1-86,text,true,,947,460,7,7,https://restful-booker.herokuapp.com/booking,297,0,0
+1788478589633,1212,01 - post Auth,200,OK,baseline load 50 user 1-87,text,true,,774,277,7,7,https://restful-booker.herokuapp.com/auth,1212,0,914
+1788478590847,309,03 - PUT Update Booking,200,OK,baseline load 50 user 1-86,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/3088,309,0,0
+1788478590847,312,02 - POST Create Booking,200,OK,baseline load 50 user 1-87,text,true,,951,460,7,7,https://restful-booker.herokuapp.com/booking,312,0,0
+1788478589935,1225,01 - post Auth,200,OK,baseline load 50 user 1-88,text,true,,778,277,6,6,https://restful-booker.herokuapp.com/auth,1225,0,934
+1788478590233,1211,01 - post Auth,200,OK,baseline load 50 user 1-89,text,true,,778,277,7,7,https://restful-booker.herokuapp.com/auth,1211,0,922
+1788478591161,286,02 - POST Create Booking,200,OK,baseline load 50 user 1-88,text,true,,951,460,7,7,https://restful-booker.herokuapp.com/booking,286,0,0
+1788478591161,288,03 - PUT Update Booking,200,OK,baseline load 50 user 1-87,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/3091,288,0,0
+1788478591447,293,02 - POST Create Booking,200,OK,baseline load 50 user 1-89,text,true,,951,460,7,7,https://restful-booker.herokuapp.com/booking,293,0,0
+1788478590535,1206,01 - post Auth,200,OK,baseline load 50 user 1-90,text,true,,778,277,7,7,https://restful-booker.herokuapp.com/auth,1206,0,917
+1788478591449,304,03 - PUT Update Booking,200,OK,baseline load 50 user 1-88,text,true,,926,499,7,7,https://restful-booker.herokuapp.com/booking/3094,303,0,0
+1788478591741,290,03 - PUT Update Booking,200,OK,baseline load 50 user 1-89,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/3096,289,0,0
+1788478590832,1202,01 - post Auth,200,OK,baseline load 50 user 1-91,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1202,0,909
+1788478591742,295,02 - POST Create Booking,200,OK,baseline load 50 user 1-90,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,295,0,0
+1788478592038,273,03 - PUT Update Booking,200,OK,baseline load 50 user 1-90,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/3098,273,0,0
+1788478592035,276,02 - POST Create Booking,200,OK,baseline load 50 user 1-91,text,true,,943,460,6,6,https://restful-booker.herokuapp.com/booking,276,0,0
+1788478591133,1188,01 - post Auth,200,OK,baseline load 50 user 1-92,text,true,,770,277,5,5,https://restful-booker.herokuapp.com/auth,1188,0,915
+1788478592312,274,03 - PUT Update Booking,200,OK,baseline load 50 user 1-91,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/3102,273,0,0
+1788478592322,283,02 - POST Create Booking,200,OK,baseline load 50 user 1-92,text,true,,943,460,5,5,https://restful-booker.herokuapp.com/booking,283,0,0
+1788478591433,1206,01 - post Auth,200,OK,baseline load 50 user 1-93,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1206,0,921
+1788478592606,301,03 - PUT Update Booking,200,OK,baseline load 50 user 1-92,text,true,,918,499,6,6,https://restful-booker.herokuapp.com/booking/3105,301,0,0
+1788478591732,1175,01 - post Auth,200,OK,baseline load 50 user 1-94,text,true,,770,277,6,6,https://restful-booker.herokuapp.com/auth,1175,0,887
+1788478592641,277,02 - POST Create Booking,200,OK,baseline load 50 user 1-93,text,true,,943,460,5,5,https://restful-booker.herokuapp.com/booking,277,0,0
+1788478592919,316,03 - PUT Update Booking,200,OK,baseline load 50 user 1-93,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/3108,316,0,0
+1788478592908,327,02 - POST Create Booking,200,OK,baseline load 50 user 1-94,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,327,0,0
+1788478592032,1204,01 - post Auth,200,OK,baseline load 50 user 1-95,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1204,0,895
+1788478593236,300,03 - PUT Update Booking,200,OK,baseline load 50 user 1-94,text,true,,914,499,7,7,https://restful-booker.herokuapp.com/booking/3112,299,0,0
+1788478592333,1204,01 - post Auth,200,OK,baseline load 50 user 1-96,text,true,,766,277,7,7,https://restful-booker.herokuapp.com/auth,1204,0,902
+1788478593237,300,02 - POST Create Booking,200,OK,baseline load 50 user 1-95,text,true,,939,460,7,7,https://restful-booker.herokuapp.com/booking,300,0,0
+1788478592634,1125,01 - post Auth,200,OK,baseline load 50 user 1-97,text,true,,766,277,6,6,https://restful-booker.herokuapp.com/auth,1125,0,862
+1788478593538,278,02 - POST Create Booking,200,OK,baseline load 50 user 1-96,text,true,,939,460,6,6,https://restful-booker.herokuapp.com/booking,278,0,0
+1788478593539,293,03 - PUT Update Booking,200,OK,baseline load 50 user 1-95,text,true,,914,499,6,6,https://restful-booker.herokuapp.com/booking/3117,293,0,0
+1788478593761,271,02 - POST Create Booking,200,OK,baseline load 50 user 1-97,text,true,,955,460,5,5,https://restful-booker.herokuapp.com/booking,271,0,0
+1788478592932,1136,01 - post Auth,200,OK,baseline load 50 user 1-98,text,true,,782,277,5,5,https://restful-booker.herokuapp.com/auth,1136,0,853
+1788478593818,282,03 - PUT Update Booking,200,OK,baseline load 50 user 1-96,text,true,,930,499,5,5,https://restful-booker.herokuapp.com/booking/3120,282,0,0
+1788478593232,1051,01 - post Auth,200,OK,baseline load 50 user 1-99,text,true,,782,277,4,4,https://restful-booker.herokuapp.com/auth,1051,0,796
+1788478594034,268,03 - PUT Update Booking,200,OK,baseline load 50 user 1-97,text,true,,930,499,4,4,https://restful-booker.herokuapp.com/booking/3125,268,0,0
+1788478594071,283,02 - POST Create Booking,200,OK,baseline load 50 user 1-98,text,true,,955,460,3,3,https://restful-booker.herokuapp.com/booking,283,0,0
+1788478594285,278,02 - POST Create Booking,200,OK,baseline load 50 user 1-99,text,true,,955,460,3,3,https://restful-booker.herokuapp.com/booking,278,0,0
+1788478593532,1032,01 - post Auth,200,OK,baseline load 50 user 1-100,text,true,,782,277,3,3,https://restful-booker.herokuapp.com/auth,1032,0,784
+1788478594356,288,03 - PUT Update Booking,200,OK,baseline load 50 user 1-98,text,true,,930,499,3,3,https://restful-booker.herokuapp.com/booking/3130,288,0,0
+1788478594564,307,03 - PUT Update Booking,200,OK,baseline load 50 user 1-99,text,true,,930,499,2,2,https://restful-booker.herokuapp.com/booking/3132,307,0,0
+1788478594566,305,02 - POST Create Booking,200,OK,baseline load 50 user 1-100,text,true,,955,460,2,2,https://restful-booker.herokuapp.com/booking,305,0,0
+1788478594872,275,03 - PUT Update Booking,200,OK,baseline load 50 user 1-100,text,true,,914,499,1,1,https://restful-booker.herokuapp.com/booking/3137,275,0,0

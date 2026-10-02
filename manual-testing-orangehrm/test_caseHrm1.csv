@@ -1,0 +1,69 @@
+﻿Test_ID,Module,Scenario_Title,Test_Type,Preconditions,Test_Steps,Expected_Result
+TC_UM_001,User Management,Create Admin user with valid data,Positive,Admin logged in,"""1. Navigate to Admin > User Management.
+ 2. Click Add.
+ 3. Select Role: Admin. 
+4. Enter valid employee name username and password.
+ 5. Click Save.""",User saved successfully and visible in system list.
+TC_UM_002,User Management,Username minimum boundary check (EP/BVA),BVA,Admin logged in,"""1. Navigate to Admin > User Management.
+ 2. Click Add.
+ 3. Select Role: Admin. 
+4. Enter valid employee name username and password.
+ 5. Click Save.""","Validation error display: 'Should be at least 
+5 characters'."
+TC_UM_003,User Management,Username maximum boundary check (EP/BVA),BVA,Admin logged in,"""1. Navigate to Admin > User Management.
+ 2. Click Add.
+ 3. Select Role: Admin. 
+4. Enter valid employee name username and password.
+ 5. Click Save.""","Input field restricts typing beyond 40 characters
+ or shows validation error."
+TC_UM_004,User Management,Duplicate username creation attempt,Negative,User 'testuser1' exists,"""1. Navigate to Add User. 
+2. Enter 'testuser1' in username field.""","Validation message appears stating username
+ already exists."
+TC_UM_005,User Management,XSS injection script in Employee Name field,Security,Admin logged in,"""1. Go to Add User. 
+2. Input <script>alert('xss')</script> in search text fields.""","Input sanitized; no popup executes.
+ Text rendered safely as string."
+TC_UM_006,User Management,SQL injection string in Username field,Security,Admin logged in,"""1. Go to Admin User Search.
+ 2. Input ' OR '1'='1 in search box. 
+3. Click Search.""","System displays 'No Records Found' or 
+handles gracefully without DB error."
+TC_UM_007,User Management,Password strength rule validation - Weak,Negative,Admin logged in,"""1. Go to Add User. 
+2. Type '12345' into Password field.""","Password meter displays 'Weak' and save is 
+disabled or fails."
+TC_UM_008,User Management,Disable user account status check,Functional,User account active,"""1. Edit existing user. 
+2. Change Status to Disabled.
+ 3. Save.
+ 4. Attempt login with disabled account.""",Login rejected with message 'Account Disabled'.
+TC_UM_009,User Management,Session timeout during user modification,Security,User edit page open,"""1. Open user edit form. 
+2. Wait for session timeout period. 
+3. Click Save.""","System redirects user to Login screen without 
+saving orphan data."
+TC_UM_010,User Management,Search user by exact Role filter,Functional,Multiple users exist,"""1. Select Role filter 'ESS'. 
+2. Click Search.""",Grid displays only users with role matching ESS.
+TC_LA_001,Leave Allocation,Assign valid leave entitlement,Positive,Admin logged in,"""1. Navigate to Leave > Entitlements > Add.
+ 2. Select Employee Leave Type and enter 10 days. 
+3. Click Save.""","10 days entitlement credited successfully to 
+employee balance."
+TC_LA_002,Leave Allocation,Assign zero days leave entitlement,Boundary,Admin logged in,"""1. Navigate to Add Entitlement. 
+2. Enter 0.00 in entitlement field.
+ 3. Click Save.""",Validation error: 'Should be greater than 0'.
+TC_LA_003,Leave Allocation,Assign upper boundary leave entitlement (365 days),BVA,Admin logged in,"""1. Navigate to Add Entitlement. 
+2. Enter 365.00 days.
+ 3. Click Save.""",Entitlement processed successfully for 365 days.
+TC_LA_004,Leave Allocation,Assign invalid negative entitlement value,Negative,Admin logged in,"""1. Navigate to Add Entitlement.
+ 2. Enter -5.00 days. 
+3. Click Save.""",Validation error displayed; input rejected.
+TC_LA_005,Leave Allocation,Apply leave with insufficient balance,Negative,Employee has 2 days balance,"""1. Log in as ESS user. 
+2. Submit Leave Request for 5 days.""","System blocks request or marks as 'Insufficient 
+Balance Pending Approval'."
+TC_LA_006,Leave Allocation,Overlapping leave date application,Negative,Approved leave on Oct 10-12,1. Apply for new leave covering Oct 11 to Oct 14.,"System shows error: 'Overlapping Leave
+ Request Exists'."
+TC_LA_007,Leave Allocation,Cancel pending leave request,Functional,Leave status 'Pending',"""1. Navigate to My Leave List. 
+2. Click Cancel on pending request.""","Status changes immediately to 'Cancelled' 
+and balance holds are released."
+TC_LA_008,Leave Allocation,Admin approve leave workflow state update,Functional,Leave status 'Pending',"""1. Admin navigates to Leave List. 
+2. Selects Pending request.
+ 3. Clicks Approve.""","Status updates to 'Approved' and employee
+ record reflects update."
+TC_LA_009,Leave Allocation,Leave duration calculation on weekends,Business Logic,Non-working weekend set,1. Apply for leave Friday to Monday.,"System counts total leave taken as 2 days
+ (excluding Sat/Sun)."
+TC_LA_010,Leave Allocation,Direct URL bypass authorization check,Security,Logged out / ESS user,1. Paste direct URL to Admin Leave Entitlement page without admin session.,System redirects to access denied or login page.

@@ -1,0 +1,248 @@
+{
+  "info": {
+    "_postman_id": "d5e253f9-6e7b-4836-976f-4c01d8d9111a",
+    "name": "ReqRes API Suite",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54196650",
+    "_collection_link": "https://go.postman.co/collection/54196650-d5e253f9-6e7b-4836-976f-4c01d8d9111a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "list_users",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// 1. Verify response status code is 200 OK\r",
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "// 2. Verify response time is under 1 second\r",
+                  "pm.test(\"Response time is less than 2000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+                  "});\r",
+                  "\r",
+                  "// 3. Validate user array structure\r",
+                  "pm.test(\"Response contains data array with users\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData).to.have.property('data');\r",
+                  "    pm.expect(jsonData.data).to.be.an('array');\r",
+                  "    pm.expect(jsonData.data.length).to.be.above(0);\r",
+                  "});\r",
+                  "\r",
+                  "// 4. Validate user object schema\r",
+                  "pm.test(\"User object contains expected fields\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    var firstUser = jsonData.data[0];\r",
+                  "    pm.expect(firstUser).to.have.all.keys('id', 'email', 'first_name', 'last_name', 'avatar');\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{api_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users?page=2",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "users"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "creat user",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// 1. Verify status code is 201 Created\r",
+                  "pm.test(\"Status code is 201 Created\", function () {\r",
+                  "    pm.response.to.have.status(201);\r",
+                  "});\r",
+                  "\r",
+                  "// 2. Validate request body details match response\r",
+                  "pm.test(\"Created user details match payload\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.name).to.eql(\"Imoh Effiong\");\r",
+                  "    pm.expect(jsonData.job).to.eql(\"QA Automation Engineer\");\r",
+                  "});\r",
+                  "\r",
+                  "// 3. Verify ID and createdAt generation\r",
+                  "pm.test(\"Response contains generated id and createdAt\", function () {\r",
+                  "    const jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData).to.have.property('id');\r",
+                  "    pm.expect(jsonData).to.have.property('createdAt');\r",
+                  "});\r",
+                  "\r",
+                  "// 4. Store generated user ID as an environment variable\r",
+                  "const jsonData = pm.response.json();\r",
+                  "pm.environment.set(\"user_id\", jsonData.id);"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{api_key}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Imoh Effiong\",\r\n    \"job\": \"QA Automation Engineer\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update user",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// 1. Verify status code is 200 OK\r",
+                  "pm.test(\"Status code is 200 OK\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "// 2. Verify updated fields and updatedAt timestamp\r",
+                  "pm.test(\"User payload successfully updated\", function () {\r",
+                  "    var jsonData = pm.response.json();\r",
+                  "    pm.expect(jsonData.name).to.eql(\"Imoh Effiong\");\r",
+                  "    pm.expect(jsonData.job).to.eql(\"Lead QA Engineer\");\r",
+                  "    pm.expect(jsonData).to.have.property('updatedAt');\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{api_key}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Imoh Effiong\",\r\n    \"job\": \"Lead QA Engineer\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/2",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete user",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "// 1. Verify status code is 204 No Content\r",
+                  "pm.test(\"Status code is 204 No Content\", function () {\r",
+                  "    pm.response.to.have.status(204);\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "{{api_key}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users/2",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "users",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
