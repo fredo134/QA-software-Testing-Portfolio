@@ -1,0 +1,175 @@
+{
+  "info": {
+    "_postman_id": "6143aa0a-b4a9-4a61-9bcf-2346419ad72b",
+    "name": "Paystack Sandbox API Suite",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54196650",
+    "_collection_link": "https://go.postman.co/collection/54196650-6143aa0a-b4a9-4a61-9bcf-2346419ad72b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Transactions",
+      "item": [
+        {
+          "name": "POST Initialize Transaction",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200 OK\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\nconst jsonData = pm.response.json();\r\n\r\npm.test(\"Initialization status is true\", function () {\r\n    pm.expect(jsonData.status).to.eql(true);\r\n});\r\n\r\npm.test(\"Reference and authorization URL are returned\", function () {\r\n    pm.expect(jsonData.data).to.have.property(\"reference\").that.is.a(\"string\").and.not.empty;\r\n    pm.expect(jsonData.data).to.have.property(\"authorization_url\").that.is.a(\"string\").and.not.empty;\r\n});\r\n\r\n// Save reference dynamically for the Verify request\r\npm.environment.set(\"tx_reference\", jsonData.data.reference);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{secret_key}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"{{test_email}}\",\r\n  \"amount\": \"50000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/transaction/initialize",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "transaction",
+                "initialize"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "02 - GET Verify Transaction",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200 OK\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\nconst jsonData = pm.response.json();\r\n\r\npm.test(\"Verification response status is true\", function () {\r\n    pm.expect(jsonData.status).to.eql(true);\r\n});\r\n\r\npm.test(\"Transaction reference and amount match\", function () {\r\n    pm.expect(jsonData.data.reference).to.eql(pm.environment.get(\"tx_reference\"));\r\n    pm.expect(jsonData.data.amount).to.eql(50000);\r\n    pm.expect(jsonData.data.currency).to.eql(\"NGN\");\r\n});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{secret_key}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/transaction/verify/{{tx_reference}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "transaction",
+                "verify",
+                "{{tx_reference}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "03 - GET List Transactions",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200 OK\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\npm.test(\"Response time is under 1500ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(1500);\r\n});\r\n\r\nconst jsonData = pm.response.json();\r\n\r\npm.test(\"Transactions list is returned as an array\", function () {\r\n    pm.expect(jsonData.status).to.eql(true);\r\n    pm.expect(jsonData.data).to.be.an(\"array\");\r\n});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "bearer {{secret_key}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/transaction",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "transaction"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "04 - GET Verify Invalid Referenc",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 400 Bad Request for invalid reference\", function () {\r\n    pm.response.to.have.status(400);\r\n});\r\n\r\nconst jsonData = pm.response.json();\r\n\r\npm.test(\"Response indicates failed lookup\", function () {\r\n    pm.expect(jsonData.status).to.eql(false);\r\n    pm.expect(jsonData.message).to.be.a(\"string\").and.not.empty;\r\n   \r\n});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{secret_key}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/transaction/verify/invalid_ref_999999",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "transaction",
+                "verify",
+                "invalid_ref_999999"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+	"id": "6658bd3a-292b-4e15-a7db-4ec87f2cd886",
+	"name": "Paystack-Sandbox",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://api.paystack.co",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "secret_key",
+			"type": "default",
+			"enabled": true,
+			"secret": true
+		},
+		{
+			"key": "test_email",
+			"value": "qa.tester@example.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "tx_refrence",
+			"value": "T229722887813419",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "tx_reference",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-11-25T15:56:26.095Z",
+	"_postman_exported_using": "Postman/12.38.4"
+}
