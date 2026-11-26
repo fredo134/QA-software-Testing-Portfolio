@@ -70,3 +70,15 @@ Enterprise-level functional test planning, complex workflow coverage, Boundary V
 * 📋 **[Test Case Suite (.csv)](./manual-testing-orangehrm/test_caseHrm1.csv)**
 * 🗺️ **[Requirements Traceability Matrix (RTM)](./manual-testing-orangehrm/RTM.md)**
 * 🐛 **[GitHub Defect Tracker (Logged Bugs)](https://github.com/fredo134/QA-Manual-Testing-Portfolio/issues)**
+
+---
+
+### 6. 💳 [Paystack Sandbox API Testing Suite](./paystack-sandbox/)
+Automated REST API test suite executed against Paystack's Test Mode (`https://api.paystack.co`), validating payment initialization, dynamic reference verification, transaction listing, negative error handling, and Newman CLI HTML reporting.
+
+* 📝 **[Project Documentation](./paystack-sandbox/README.md)**
+* 📁 **[Postman Collection](./paystack-sandbox/collections/Paystack_collection.json)**
+* ⚙️ **[Environment Template](./paystack-sandbox/environments/Paystack_environment.json)**
+* 📊 **[Newman HTML Report](./paystack-sandbox/reports/index.html)**
+
+---
